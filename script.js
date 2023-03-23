@@ -40,6 +40,9 @@ function checkSubstring() {
 function insertionSort() {
     let input = document.getElementById("inputB4").value;
     let arr = input.split(",");
+    if (arr.indexOf(" ") !== -1) {
+        arr.splice(arr.indexOf(" "), 1);
+      }
     for (var a = 0; a < arr.length; a++) {
         arr[a] = Number(arr[a]);
     }
@@ -48,7 +51,6 @@ function insertionSort() {
             arr.splice(a, 1);
         }
     }
-
     console.log(arr);
 
     for (let i = 1; i < arr.length; i++) {
