@@ -38,11 +38,11 @@ function checkSubstring() {
 
 // Bài 4: sắp xếp theo thứ tự tăng dần
 function insertionSort() {
-    let input = document.getElementById("inputB4").value;
+    let input = document.getElementById("inputB4").value.replace(/\s+/g, " ");
     let arr = input.split(",");
     if (arr.indexOf(" ") !== -1) {
         arr.splice(arr.indexOf(" "), 1);
-      }
+    }
     for (var a = 0; a < arr.length; a++) {
         arr[a] = Number(arr[a]);
     }
@@ -183,4 +183,5 @@ function clearResult() {
     document.getElementById("resultB1").innerHTML = "";
     document.getElementById("resultB2").innerHTML = "";
     document.getElementById("resultB3").innerHTML = "";
+    document.getElementById("resultB4").innerHTML = "";
 }
