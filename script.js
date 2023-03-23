@@ -25,7 +25,7 @@ function capitalizeFirstLetter() {
 
 // Bài 3: Xóa các phần tử trùng nhau
 function checkSubstring() {
-    let input = document.getElementById("inputB3").value;
+    let input = document.getElementById("inputB3").value.toLowerCase();
     let words = input.split(",");
     let resultB3 = [];
     for (let i = 0; i < words.length; i++) {
