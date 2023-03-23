@@ -1,0 +1,38 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0px 20px;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+button {
+    margin: 20px 0px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 5px 20px;
+}
+
+tr,
+td {
+    border: 1px solid black;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(253, 213, 220);
+}

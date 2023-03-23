@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+    <h1>MODULE 01 – JAVASCRIPT – HACKATHON 02</h1>
+    <h2>PHẦN THỰC HÀNH CƠ BẢN</h2><br>
+    <!-- Bài 1 -->
+    <h3>BÀI 1: ĐẢO NGƯỢC CHUỖI</h3>
+    Nhập chuỗi ký tự <input type="text" id="inputB1" oninput="clearResult()"><br>
+    <button onclick="reverseString('inputB1')">Kết quả</button>
+    <span id="resultB1"></span>
+
+    <!-- Bài 2 -->
+    <h3>BÀI 2: IN RA CHUỖI VỚI KÝ TỰ ĐẦU ĐƯỢC VIẾT HOA</h3>
+    Nhập chuỗi ký tự <input type="text" id="inputB2" oninput="clearResult()"><br>
+    <button onclick="capitalizeFirstLetter('inputB2')">Kết quả</button>
+    <span id="resultB2"></span>
+
+    <!-- Bài 3 -->
+    <h3>BÀI 3: XÓA CÁC PHẦN TỬ TRÙNG NHAU</h3>
+    Nhập chuỗi, ngăn cách nhau bởi dấu "," <br>
+    <input type="text" id="inputB3" oninput="clearResult()"><br>
+    <button onclick="checkSubstring()">Kết quả</button>
+    <span id="resultB3"></span>
+
+    <!-- Bài 4 -->
+    <h3>BÀI 4: SẮP XẾP THEO THỨ TỰ TĂNG DẦN</h3>
+    Nhập dãy số, ngăn cách nhau bởi dấu "," <br>
+    <input type="text" id="inputB4" oninput="clearResult()"><br>
+    <button onclick="insertionSort('inputB4')">Kết quả</button>
+    <span id="resultB4"></span>
+
+    <!-- Bài 5 -->
+    <h3>BÀI 5: QUẢN LÝ NHÂN VIÊN</h3>
+    <div class="reset-form">
+        Nhập tên nhân viên
+        <input type="text" id="name" placeholder="Tên nhân viên" /><br />
+        Mã nhân viên
+        <input type="text" id="mnv" placeholder="Mã nhân viên" /><br />
+        Giới tính
+        <select name="" id="gender">
+            <option value="Nam">Nam</option>
+            <option value="Nữ">Nữ</option>
+        </select><br>
+        Nhập tuổi <input type="text" id="age" placeholder="Ngày sinh" /><br />
+        Quê quán
+        <input type="text" id="homeTown" placeholder="Quê quán" /><br />
+        <button type="submit" onclick="add()">Lưu</button>
+    </div>
+    <h3>Danh sách nhân viên</h3>
+    <table id="table">
+        <!-- <tr>
+                <td>TT</td>
+                <td>Tên nhân viên</td>
+                <td>Mã nhân viên </td>
+                <td>Giới tính </td>
+                <td>Ngày sinh </td>
+                <td>Quê quán </td>
+                <td><button>Edit</button></td>
+                <td><button>Delete</button></td>
+            </tr> -->
+    </table>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
